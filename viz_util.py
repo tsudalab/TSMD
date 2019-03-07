@@ -85,7 +85,7 @@ def draw_pacs_tree_colored(log_file, out):
     G.node('0-0', '0', fillcolor=color_hex)
     # G.node('0-0', '', fillcolor=color_hex, color='white', width='12')
     color_hex = value2hex(255/n_cycles * 1) 
-    for i in range(5):
+    for i in range(len(log[0])):
         state = '1-' + str(i)
         G.node(state, str(state), fillcolor=color_hex)
         # G.node(state, '', fillcolor=color_hex, color='white', width='12')
