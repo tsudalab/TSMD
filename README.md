@@ -1,23 +1,23 @@
 # TSMD
-Python implementation for TS_MD and PaCS_MD [Harada, R. and Kitao, A., "Parallel cascade selection molecular dynamics (PaCS-MD) to generate conformational transition pathway," J. Chem. Phys., 139, 07B611 1. (2013)].
+Python implementations of TS-MD and PaCS-MD [Harada, R. and Kitao, A., "Parallel cascade selection molecular dynamics (PaCS-MD) to generate conformational transition pathway," J. Chem. Phys., 139, 07B611 1. (2013)].
 Our implementations use GROMACS command for all of the manipulation about MD simulation.
 The required version is GROMACS 2016.5.
 ## USAGE
 ### equivration
-Before running PaCS or PaTS MD, We have to do adding ion, energy minimization, nvt equilibration and npt equilibration.
+Before running TS-MD or PaCS-MD, we have to do adding ion, energy minimization, nvt equilibration and npt equilibration.
 We need the .mdp files to do each manipulation of such preparations. The .mdp files here are intended only for use with this chignolin(1uao) folding sample. You have to set the parameters for each of your tasks.  
 ```
 initialize.py() 
 ```
 ### Requrements
-Both PaCS and PaTS MD program require the files shown below.
+Both TS-MD and PaCS-MD program require the files shown below.
 - reactant structure (.gro)
 - checkpoint file after the equilibration (.cpt)
 - topology file (.top)
 - target structure (.gro)
 - mdp file for short md (.mdp)
 
-### PaTS MD
+### TS-MD
 - Options
   - -r : Reactant structure file (.gro).
   - -t : Target structure file (.gro).
@@ -37,10 +37,10 @@ your command is
 ```
 python pats_md.py -r reactant -t target -top topol
 ```
-If PaTS-MD doesn't reach the enough RMSD, the intermediate state is preserve as vars.pikcle automatically.
+If TS-MD doesn't reach the enough RMSD, the intermediate state is preserve as vars.pikcle automatically.
 You can resume the process by setting the -cn to 1.
 
-### PACS MD
+### PaCS-MD
 ```
 python pacs_md.py -r reactant -t target -top topl
 ```
