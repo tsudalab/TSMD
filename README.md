@@ -1,6 +1,6 @@
-# mcts_md
-Python implementation for PaCS_MD and PaTS_MD.
-It uses GROMACS command for all of the manipulation　about MD simulation.
+# TSMD
+Python implementation for TS_MD and PaCS_MD [Harada, R. and Kitao, A., "Parallel cascade selection molecular dynamics (PaCS-MD) to generate conformational transition pathway," J. Chem. Phys., 139, 07B611 1. (2013)].
+Our implementations use GROMACS command for all of the manipulation about MD simulation.
 The required version is GROMACS 2016.5.
 ## USAGE
 ### equivration
