@@ -3,7 +3,7 @@ Python implementations of TS-MD* and PaCS-MD**.
 Our implementations use GROMACS command for all of the manipulation about MD simulation.
 The required version is GROMACS 2016.5.
 
-\* K. Shin, D. P. Tran, K. Takemura, A. Kitao, K. Terayama*, and K. Tsuda*, "Enhancing biomolecular sampling with reinforcement learning: tree search molecular dynamics simulation method," ACS Omega, 2019. [DOI: 10.1021/acsomega.9b01480]
+\* K. Shin, D. P. Tran, K. Takemura, A. Kitao, K. Terayama, and K. Tsuda, "Enhancing biomolecular sampling with reinforcement learning: tree search molecular dynamics simulation method," ACS Omega, 2019. [DOI: 10.1021/acsomega.9b01480]
 
 \*\* R. Harada and A. Kitao, "Parallel cascade selection molecular dynamics (PaCS-MD) to generate conformational transition pathway," J. Chem. Phys., 139, 07B611 1. (2013)
 
