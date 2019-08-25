@@ -1,7 +1,12 @@
 # TSMD
-Python implementations of TS-MD^* and PaCS-MD [Harada, R. and Kitao, A., "Parallel cascade selection molecular dynamics (PaCS-MD) to generate conformational transition pathway," J. Chem. Phys., 139, 07B611 1. (2013)].
+Python implementations of TS-MD* and PaCS-MD**.
 Our implementations use GROMACS command for all of the manipulation about MD simulation.
 The required version is GROMACS 2016.5.
+
+
+**Harada, R. and Kitao, A., "Parallel cascade selection molecular dynamics (PaCS-MD) to generate conformational transition pathway," J. Chem. Phys., 139, 07B611 1. (2013)
+
+
 ## USAGE
 ### equivration
 Before running TS-MD or PaCS-MD, we have to do adding ion, energy minimization, nvt equilibration and npt equilibration.
